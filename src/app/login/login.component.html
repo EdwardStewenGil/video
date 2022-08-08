@@ -1,0 +1,21 @@
+<main class="form-signin">
+      <h1 class="h3 mb-3 fw-normal">iniciar sesion Looc</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" [(ngModel)]="usuario.email" placeholder="name@example.com">
+        <label for="floatingInput">correo</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword"  [(ngModel)]="usuario.password" placeholder="Password">
+        <label for="floatingPassword">contrasena</label>
+      </div>
+  
+      <div class="checkbox mb-3">
+<label>Aun no tienes cuenta?</label><a href="/register">Registrar</a>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="Ingresar()">Iniciar sesion</button>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="Ingresar()">Iniciar con Google</button>
+
+      <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </main>
+  
